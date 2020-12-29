@@ -58,6 +58,8 @@ function ChatRoom() {
   const [messages] = useCollectionData(query, { idField: "id" });
   const [formValue, setFormValue] = useState("");
 
+  const dummy = useRef();
+
   const sendMessage = async (e) => {
     e.preventDefault();
     const { uid, photoURL } = auth.currentUser;
@@ -72,8 +74,6 @@ function ChatRoom() {
     setFormValue("");
     dummy.current.scrollIntoView({ behavior: "smooth" });
   };
-
-  const dummy = useRef();
 
   return (
     <>
