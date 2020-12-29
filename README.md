@@ -1,1 +1,1 @@
-# For playing with react and firebase
+# Playground for react and firebase
